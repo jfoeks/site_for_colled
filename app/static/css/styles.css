@@ -1,0 +1,360 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Верхнее меню */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .menu li {
+    display: inline;
+}
+
+header .menu a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header .call-back-btn {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .call-back-btn:hover {
+    background: #2980b9;
+}
+
+/* Главный блок */
+.hero {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+.cta-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-btn:hover {
+    background: #c0392b;
+}
+
+/* Преимущества */
+.advantages {
+    padding: 40px 20px;
+    text-align: center;
+    background: #ecf0f1;
+}
+
+.advantage-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.advantage {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.advantage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Слайдер */
+.slider {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.slider-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.slider-container .slide {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+.slider-container .slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Отзывы */
+.reviews {
+    padding: 40px 20px;
+    background: #ecf0f1;
+    text-align: center;
+}
+
+.review-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.review p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.review span {
+    font-weight: bold;
+}
+
+/* Новости */
+.news {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.news-item {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.news-item h3 {
+    margin-top: 0;
+}
+
+/* Нижнее меню */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .footer-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-menu li {
+    display: inline;
+}
+
+footer .footer-menu a {
+    color: #fff;
+}
+
+footer .socials a img {
+    max-height: 30px;
+    margin: 0 5px;
+}
+/* Основная структура для "залипания" footer внизу */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Общие стили текста */
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-size: 18px;
+    font-style: italic;
+    color: #7f8c8d;
+    border-left: 5px solid #bdc3c7;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+/* Кнопки */
+button {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background: #f4f4f4;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
